@@ -1,0 +1,52 @@
+generated: '2026-08-23'
+method: probed
+source: live GET probes of /.well-known/* on every host named in apis.yml
+note: >-
+  Recorded absence. Every /.well-known/ path was probed on both the apex and www hosts of
+  kinasettherapeutics.com — the only host this company operates — and every one returned HTTP 404.
+  No document was fetched and none was saved, so NO WellKnown and NO SecurityTxt pointer is wired
+  into apis.yml: this file documents an absence, not a presence. The host is Squarespace; it returns
+  an honest 404 status (the body is the site 404 page, 88,169 bytes) rather than a soft-200
+  catch-all, except for /.well-known/security.txt which returns a 404 with the JSON body
+  {"message":"security.txt not found"}. There is no api.*, developer.* or docs.* subdomain (NXDOMAIN
+  on all three), and no OpenAPI servers[] host exists because the company publishes no contract.
+hit_count: 0
+hosts:
+- host: https://www.kinasettherapeutics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://kinasettherapeutics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-evidence:
+  probed: '2026-08-23'
+  user_agent: browser (Chrome 125 UA string)
+  soft_404_control: >-
+    Not required — the host returns a real 404 status code on every miss, so no control probe was
+    needed to distinguish a served document from a catch-all.
