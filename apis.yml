@@ -17,6 +17,17 @@ description: 'Kinaset Therapeutics, Inc. is a clinical-stage biopharmaceutical c
   marketing and investor-news site whose robots.txt disallows every platform JSON view and blocks the
   major AI crawlers by user agent.'
 url: https://raw.githubusercontent.com/api-evangelist/kinaset-therapeutics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://images.squarespace-cdn.com/content/6074890838dd81772d76a539/a1b26a82-6ba5-42b8-a5b7-d9307544c035/Kinaset-share-social.png?content-type=image%2Fpng
 x-type: company
 x-source: harvest:secondary-market
