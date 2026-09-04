@@ -28,6 +28,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://images.squarespace-cdn.com/content/6074890838dd81772d76a539/a1b26a82-6ba5-42b8-a5b7-d9307544c035/Kinaset-share-social.png?content-type=image%2Fpng
 x-type: company
 x-source: harvest:secondary-market
